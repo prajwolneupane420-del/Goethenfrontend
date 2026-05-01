@@ -23,7 +23,7 @@ async function startServer() {
   });
   app.use(vite.middlewares);
 } else {
-  const distPath = path.join(process.cwd(), "dist");
+  const distPath = path.resolve("dist");
 
   app.use(express.static(distPath));
 
@@ -43,4 +43,3 @@ async function startServer() {
 }
 
 export { startServer };
-startServer();
