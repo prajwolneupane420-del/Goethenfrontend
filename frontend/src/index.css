@@ -1,0 +1,37 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Arial", Helvetica, sans-serif;
+  --font-serif: "Arial", Helvetica, sans-serif;
+  
+  --color-accent: #F43F5E; /* Rose 500 */
+  --color-dark-bg: #050505;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: var(--color-dark-bg);
+  color: #ffffff;
+  margin: 0;
+}
+
+.font-serif {
+  font-family: var(--font-serif);
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.03);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  backdrop-filter: blur(10px);
+}
+
+.shadow-neon {
+  box-shadow: 0 0 20px rgba(244, 63, 94, 0.2);
+}
+
+.bento-grid {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  grid-template-rows: repeat(12, 1fr);
+  gap: 16px;
+}
